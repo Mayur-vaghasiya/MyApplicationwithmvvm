@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="event"
+            type="com.example.myapplicationwithmvvmdignizent.model.EventModel.Data"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:background="#2A99A5"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/eventid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(event.eventId)}"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="@{event.eventDate}"
+            android:paddingStart="20dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/eventtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="@{event.eventTitle}"
+            android:paddingStart="20dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/eventdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="@{event.eventDescriptio}"
+            android:paddingStart="20dp"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+</layout>
